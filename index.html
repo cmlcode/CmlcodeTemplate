@@ -23,6 +23,7 @@
     <meta charset="UTF-8" />
   </head>
   <body>
+
     <!-- =========== -->
     <!-- Header menu -->
     <!-- =========== -->
@@ -61,24 +62,18 @@
                 Experience
               </a>
             </li>
-            <!-- Projects link -->
-            <!-- TODO: add link -->
-            <li class="header_link-wrapper">
-              <a href="INSERT LINK HERE" class="header_link">
-                Projects
-              </a>
-            </li>
+            <!-- TODO: Add projects link -->
           </ul>
           <!-- Mobile hamburger menus -->
           <div class="header_menu_wrapper">
-            <!-- Open menu -->
+            <!-- Shows the open menu -->
             <img
               src="assets/svg/menu.svg"
               alt="hamburger menu"
               class="header_menu"
               id = "menu_btn"
             />
-            <!-- Closed menu -->
+            <!-- Shows the closed menu -->
             <!-- TODO: add image src -->
             <img
               src="INSERT IMAGE LINK HERE"
@@ -103,225 +98,179 @@
         </div>
       </div>
     </header>
+
+    <!-- ============ -->
     <!-- Home section -->
+    <!-- ============ -->
     <section id = "home" class="home">
-        <div class="home_content">
-            <h1 class="home_heading">Hey, My name is</br>Chris Lewis</h1>
-            <div class="home_text_wrapper">
-                <p class="home_text">
-                    I'm a Software Engineer and a Senior at Tulane University.</br>
-                    Welcome to my little corner of the internet!
-                </p>
-            </div>
-            <div class="home_button_wrapper">
-                <a href="https://github.com/cmlcode/cmlcode.github.io/blob/main/data/Chris_Lewis_Resume.pdf" class="button button_big">Resume</a>
-            </div>
+      <div class="home_content">
+        <!-- Home text -->
+        <!-- TODO: Change your name -->
+        <h1 class="home_heading">
+          Hey, My name is<br />
+          PUT YOUR NAME HERE
+        </h1>
+        <!-- About me text -->
+        <div class="home_text_wrapper">
+          <!-- TODO: Give a personal description -->
+          <p class="home_text">
+            SHORT DESCRIPTION
+          </p>
         </div>
-        <div class="home_socials">
-            <div class="home_social">
-                <a 
-                    href="https://www.linkedin.com/in/christopher-m-lewis" 
-                    target = "_blank" 
-                    class="home_social_link"
-                >
-                    <img
-                        src="/assets/images/linkedin.png"
-                        alt="icon"
-                        class="home_social_icon"
-                    />
-                </a>
-            </div>
-            <div class="home_social">
-                <a
-                    href="https://github.com/cmlcode" 
-                    target = "_blank"
-                    class="home_social_link home_social_link_borderless"
-                >
-                    <img
-                        src="/assets/images/github.png"
-                        alt="icon"
-                        class="home_social_icon"
-                    />
-                </a>
-            </div>
+        <!-- Resume Link -->
+        <!-- TODO: add link to resume -->
+        <div class="home_button_wrapper">
+          <a
+            href="CHANGE TO LINK"
+            class="button button_big"
+            target = "_blank"
+          >
+            Resume
+          </a>
         </div>
+      </div>
+      <!-- Display socials links when full screen -->
+      <div class="home_socials">
+        <div class="home_social">
+          <!-- TODO: Change link to your linkedin-->
+          <a 
+            href="https://www.linkedin.com/in/FAKE-ACCOUNT" 
+            target = "_blank" 
+            class="home_social_link"
+          >
+            <!-- TODO: Add img src to linkedin image-->
+            <img
+              src="INSERT IMAGE SRC"
+              alt="LinkedIn icon"
+              class="home_social_icon"
+            />
+          </a>
+        </div>
+        <!-- TODO: Add a github link -->
+      </div>
     </section>
-      <section id="about" class="section_dark section_pad">
-          <div class="section_wrapper">
-              <h2 class="heading heading-sec heading_med">
-                  <span class="heading_section">About Me</span>
-              </h2>
-              <div class="about_content">
-                  <div class="about_content-main">
-                      <h3 class="about_header">Get to know me!</h3>
-                      <div class="about_content-details">
-                          <p class="about_text">
-                              Hey! I'm
-                              <strong>Chris Lewis</strong>. I am an incoming
-                              <strong> Software Engineer </strong> at
-                              <strong> Deloitte Consulting </strong> in 
-                              Denver. Currently, I act as the President of
-                              <strong> Cookies and Code</strong>, the Computer
-                              Science club at Tulane.
-                          </p>
-                      </div>
-                      <a
-                        href="https://github.com/cmlcode/cmlcode.github.io/blob/main/data/Chris_Lewis_Resume.pdf"
-                        class="button button_med button_colored dynamicBgClr">
-                          Resume
-                      </a>
-                  </div>
-                  <div class="about_content-skills">
-                      <h3 class="about_header">My Skills</h3>
-                      <div class="skills">
-                          <div class="skills_skill">C#</div>
-                          <div class="skills_skill">C</div>
-                          <div class="skills_skill">Python</div>
-                          <div class="skills_skill">SQL</div>
-                          <div class="skills_skill">Flutter</div>
-                          <div class="skills_skill">Git</div>
-                          <div class="skills_skill">Selenium</div>
-                          <div class="skills_skill">HTML</div>
-                          <div class="skills_skill">CSS</div>
-                          <div class="skills_skill">Javascript</div>
-                          <div class="skills_skill">Django</div>
-                      </div>
-                  </div>
-              </div>
+
+    <!-- ============= -->
+    <!-- About Section -->
+    <!-- ============= -->
+    <section id="about" class="section_dark section_pad">
+      <div class="section_wrapper">
+        <!-- Section heading -->
+        <h2 class="heading heading-sec heading_med">
+          <span class="heading_section">About Me</span>
+        </h2>
+        <!-- General description -->
+        <div class="about_content">
+          <div class="about_content-main">
+            <!-- Small heading -->
+            <h3 class="about_header">
+              Get to know me
+            </h3>
+            <!-- Longer personal description-->
+            <div class="about_content-details">
+              <!-- TODO: add personal description-->
+              <!-- note: use strong text to create bold for important text -->
+              <p class="about_text">
+                Insert <strong> Personal </strong> description
+              </p>
+            </div>
+            <a
+              href="data/Resume.pdf"
+              class="button button_med button_colored dynamicBgClr"
+              target = "_blank"
+            >
+              Resume
+            </a>
           </div>
-      </section>
-      <section id="experience" class="section_light section_pad">
-          <div class="section_wrapper">
-              <h2 class="heading heading-sec heading_big">
-                  <span class="heading_section ">Experience</span>
-              </h2>
-              <div class="projects_content">
-                <div class="list_row">
-                  <div class="list_row_content">
-                    <h3 class="list_row_content_header">Deloitte Analyst</h3>
-                    </br>
-                    <ul>
-                      <li class="list_row_detail">Incoming Software Eninggering Analyst</li>
-                      <li class="list_row_detail">Starting Fall 2025</li>
-                      </br>
-                    </ul>
-                  </div>
-                </div>
-                <div class="list_row">
-                  <div class="list_row_content">
-                    <h3 class="list_row_content_header">Deloitte Summer Scholar</h3>
-                    </br>
-                    <ul>
-                      <li class="list_row_detail">Software Eninggering Summer Scholar</li>
-                      <li class="list_row_detail">May - August 2024</li>
-                      </br>
-                      <li class="list_row_detail">Collaborated on a sales prediction software to optimize inventory management for a leading retail client</li>
-                      <li class="list_row_detail">Researched data learning models, enhancing sales trend forecasting capabilities</li>
-                      <li class="list_row_detail">Wrote SQL scripts to clean and prepare data for modeling</li>
-                      <li class="list_row_detail">Developed a proff-of-concept UI test automation framework</li>
-                      <li class="list_row_detail">Demonstrated proficiency in Python machine learning models and SQL</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="list_row">
-                  <div class="list_row_content">
-                    <h3 class="list_row_content_header">Management Controls</h3>
-                    </br>
-                    <ul>
-                      <li class="list_row_detail">Test Automation Intern</li>
-                      <li class="list_row_detail">May - July 2023</li>
-                      </br>
-                      <li class="list_row_detail">Contributed to development and maintenance of automated test scrips for an Enterprise B2B SaaS application</li>
-                      <li class="list_row_detail">Manages over $50 billion annual spend on contractors</li>
-                      <li class="list_row_detail">Programmed automated test scripts in C# with the Selenium framework</li>
-                      <li class="list_row_detail">Identified and reported over 40 software bugs, including 2 critical issues</li>
-                      <li class="list_row_detail">Completed Track training for Management Controls application</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          <!-- Skills section -->
+          <div class="about_content-skills">
+            <!-- TODO: Create smaller header that matches personal description-->
+            <div class="skills">
+              <!-- TODO: Add your skills --> 
+              <div class="skills_skill">LANGUAGE</div>
+              <div class="skills_skill">PLATFORM</div>
+            </div>
           </div>
-      </section>
-      <section id="projects" class="section_dark section_pad">
-          <div class="section_wrapper">
-              <h2 class="heading heading-sec heading_med">
-                  <span class="heading_section">Projects</span>
-              </h2>
-              <div class="projects_content">
-                  <div class="list_row">
-                      <div class="list_row_content">
-                          <h3 class="list_row_content_header">Smart Agriculture</h3>
-                          </br>
-                          <a
-                              class="button button_med button_colored dynamicBgClr"
-                              href="https://github.com/cmlcode/SmartAgriculturePublic"
-                              target="_blank"
-                          >
-                              View Project
-                          </a>
-                      </div>
-                  </div>
-                  <div class="list_row">
-                      <div class="list_row_content">
-                          <h3 class="list_row_content_header">Terminal Emulator</h3>
-                          </br>
-                          <a
-                              class="button button_med button_colored dynamicBgClr"
-                              href="https://github.com/cmlcode/cmlterm"
-                              target="_blank"
-                          >
-                              View Project
-                          </a>
-                      </div>
-                  </div>
-                  <div class="list_row">
-                      <div class="list_row_content">
-                          <h3 class="list_row_content_header">Cookies and Code Site</h3>
-                          </br>
-                          <a
-                              class="button button_med button_colored dynamicBgClr"
-                              href="https://www.cookiesandcode.net/"
-                              target="_blank"
-                          >
-                              View Project
-                          </a>
-                      </div>
-                  </div>
-              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== -->
+    <!-- EXPERIENCE SECTION -->
+    <!-- ================== -->
+    <section id="experience" class="section_light section_pad">
+      <div class="section_wrapper">
+        <!-- TODO: Create header with same format as ABOUT ME section -->
+        
+
+        <!-- Experience inner section -->
+        <div class="projects_content">
+          <div class="list_row">
+            <!-- Experiince list-->
+            <div class="list_row_content">
+              <h3 class="list_row_content_header">POSITION</h3>
+              <br />
+              <ul>
+                <li class="list_row_detail">
+                  POSITION DETAIL
+                </li>
+                <!-- TODO: Add other details -->
+              </ul>
+            </div>
           </div>
-      </section>
-      <footer class="footer">
-          <div class="section_wrapper">
-              <div class="footer_upper">
-                  <div class="footer_row footer_row_1">
-                      <h2 class="heading heading_small footer_heading_small">
-                          <span>Social</span>
-                      </h2>
-                      <div class="footer_socials">
-                          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christopher-m-lewis/">
-                              <img
-                                  class="footer_icon"
-                                  src="/assets/images/linkedin.png"
-                                  alt="icon"
-                              />
-                          </a>
-                          <a target="_blank" rel="noreferrer" href="https://github.com/cmlcode">
-                              <img
-                                  class="footer_icon"
-                                  src="/assets/images/github.png"
-                                  alt="icon"
-                              />
-                          </a>
-                      </div>
-                  </div>
-                  <div class="footer_row footer_row_2">
-                      <h4 class="heading heading_small text-lt">Chris Lewis</h4>
-                      <p class="footer_desc">
-                         A Software Engineer in love with finding solutions to hard problems
-                      </p>
-                  </div>
-              </div>
+          <!-- TODO: Add other experiences -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ -->
+    <!-- PROJECTS SECTION -->
+    <!-- ================ -->
+    <section id="projects" class="section_dark section_pad">
+    <!-- TODO: Build the projects section based on experience section -->
+    <!-- Challenge: Include a link to github for the projects -->
+    </section>
+
+    <!-- ============== -->
+    <!-- FOOTER SECTION -->
+    <!-- ============== -->
+    <footer class="footer">
+      <div class="section_wrapper">
+        <!-- Moves text to top of footer -->
+        <div class="footer_upper">
+        <!-- Right footer section -->
+          <div class="footer_row footer_row_1">
+            <h2 class="heading heading_small footer_heading_small">
+              <span>Social</span>
+            </h2>
+            <div class="footer_socials">
+              <!-- TODO: Change linked in -->
+              <a target="_blank" href="https://www.linkedin.com/in/FAKE_PROFILE/">
+                <!-- TODO: Add LinkedIn icon -->
+                <img
+                    class="footer_icon"
+                    src="IMAGE LINK"
+                    alt="LinkedIn icon"
+                />
+              </a>
+              <!-- TODO: Add Github link -->
+            </div>
           </div>
-      </footer>
+          <!-- Left Footer Section -->
+          <div class="footer_row footer_row_2">
+            <!-- TODO: Change name -->
+            <h4 class="heading heading_small text-lt">YOUR NAME</h4>
+            <!-- TODO: Change description -->
+            <!--
+              I like using this as a fun little ending for the page
+              It is not necessarily a standard thing for web pages to have
+            -->
+            <p class="footer_desc">
+              PAGE DESCRIPTION TEXT
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
