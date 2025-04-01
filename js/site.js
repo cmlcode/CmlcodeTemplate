@@ -4,6 +4,21 @@ const menu_button = document.querySelector(".header_menu")
 const open_menu_button = document.querySelector(".header_menu_open")
 const menu_box = document.querySelector(".header_expanded")
 
+// Prevent site from jumping on refresh
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash) {
+    // Store scroll position
+    const scrollY = window.scrollY;
+    const scrollX = window.scrollX;
+
+    // Remove the hash from the URL
+    history.replaceState("", document.title, window.location.pathname + window.location.search);
+
+    // Restore the scroll position
+    window.scrollTo(scrollX, scrollY);
+  }
+});
+
 // Checks when the menu button is clicked
 menu_wrapper.addEventListener('click', () => {
   // Sets menu visibilities
@@ -24,4 +39,5 @@ menu_wrapper.addEventListener('click', () => {
     open_menu_button.classList.remove("invisible");
     menu_box.classList.remove("invisible")
   }
-})
+});
+

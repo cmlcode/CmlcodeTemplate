@@ -88,6 +88,11 @@ a:focus-visible{
   outline: 2px solid var(--primary-color);
 }
 
+img{
+  height: 100%;
+  width: 100%;
+}
+
 /*
  * ============
  * Home section
@@ -450,6 +455,8 @@ a:focus-visible{
   border-radius: 50px;
   height: 6.5rem;
   margin-right: 1.5rem;
+  object-fit: cover;
+  object-position: center;
   overflow: hidden;
   width: 6.5rem;
 }
@@ -458,16 +465,12 @@ a:focus-visible{
   .header_logo_img_wrapper {
     height: 5.5rem;
     margin-right: 1.2rem;
+    object-fit: cover;
+    object-position: center;
     width: 5.5rem;
   }
 }
-.header_logo_img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
+
 .header_logo_name {
   font-size: 2.75rem;
   font-weight: 700;
@@ -631,29 +634,7 @@ a:focus-visible{
   margin-top: 2rem;
 }
 
-.footer_socials {
-  margin-top: 2rem;
-}
 .footer_icon {
   margin-right: 1rem;
   width: 2.5rem;
-}
-.footer_icon--mr-none {
-  margin-right: 0;
-}
-.footer_lower {
-  color: var(--secondary-color);
-  font-size: 1.2rem;
-  padding: 4rem 0;
-  text-align: center;
-}
-.footer_lower a {
-  font-weight: bold;
-  margin-left: 2px;
-  text-decoration: underline;
-}
-@media only screen and (max-width: 56.25em) {
-  .footer_lower {
-    padding: 3.5rem 0;
-  }
 }

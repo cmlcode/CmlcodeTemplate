@@ -13,7 +13,7 @@
     <meta name="description" content="Template Portfolio Site"/>
     <!-- Link css and js files -->
     <link rel="stylesheet" href="css/site.css" />
-    <script src = "js/site.js" defer></script>
+    <script src = "js/site.js" ></script>
     <!-- allows for faster font loading -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,7 +40,6 @@
               <img
                   src="assets/images/profilePhoto.png"
                   alt="Logo Image"
-                  class="header_logo_img"
               >
             </div>
             <!-- Text next to profile image -->
@@ -49,17 +48,17 @@
           </div>
         </a>
         <!-- Navigation Section -->
-        <div class="header_main">
+        <div>
           <ul class="header_links">
             <!-- About link -->
-            <li class="header_link-wrapper">
+            <li>
               <a href="#about" class="header_link">
                 About
               </a>
             </li>
             <!-- Experience link -->
             <!-- TODO: Fix link to experience section -->
-            <li class="header_link-wrapper">
+            <li>
               <a href="INSERT LINK HERE" class="header_link">
                 Experience
               </a>
@@ -80,7 +79,7 @@
             <img
               src="INSERT IMAGE LINK HERE"
               alt="hamburger menu close"
-              class="header_menu_open invisible"
+              class="header_menu invisible"
             />
           </div>
         </div>
@@ -162,7 +161,7 @@
     <section id="about" class="section_dark section_pad">
       <div class="section_wrapper">
         <!-- Section heading -->
-        <h2 class="heading heading-sec heading_med">
+        <h2 class="heading-sec heading_med">
           <span class="heading_section">About Me</span>
         </h2>
         <!-- General description -->
@@ -251,22 +250,27 @@
         <!-- Moves text to top of footer -->
         <div class="footer_upper">
         <!-- Right footer section -->
-          <div class="footer_row footer_row_1">
-            <h2 class="heading heading_small footer_heading_small">
+          <div class="footer_row_1">
+            <h2 class="heading_small">
               <span>Social</span>
             </h2>
-            <div class="footer_socials">
+            <div>
               <!-- TODO: Change linked link -->
               <a target="_blank" href="https://www.linkedin.com/in/FAKE_PROFILE/">
                 <!-- TODO: Add the LinkedIn Icon image-->
+                <img
+                    class="footer_icon"
+                    src="INSERT LINKEDIN ICON SOURCE"
+                    alt="LinkedIn Icon"
+                />
               </a>
               <!-- TODO: Add a Github link with the Github Icon -->
             </div>
           </div>
           <!-- Left Footer Section -->
-          <div class="footer_row footer_row_2">
+          <div class="footer_row_2">
             <!-- TODO: Change the name in the footer -->
-            <h4 class="heading heading_small text-lt">YOUR NAME</h4>
+            <h4 class="heading_small">YOUR NAME</h4>
             <!-- 
               TODO:
               Add a personal message
